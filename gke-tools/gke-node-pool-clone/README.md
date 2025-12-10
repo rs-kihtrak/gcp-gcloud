@@ -1,25 +1,15 @@
 ## 📑 Table of Contents
 1. [Overview](#overview)
-2. [Scripts Included](#scripts-included)
-3. [Highlights](#Highlights)
-4. [Requirements](#requirements)
-5. [Usage](#usage)
-6. [Generated Output](#generated-output)
-7. [Notes](#notes)
+2. [Highlights](#Highlights)
+3. [Requirements](#requirements)
+4. [Usage](#usage)
+5. [Generated Output](#generated-output)
 
 ---
 
 ## 🔍 Overview
 This repository contains compact, powerful scripts for **GKE Node Pool clone automation**.  
 The tool, **gke-node-pool-clone.sh**, extracts configuration from an existing GKE node pool and generates a ready-to-run script to recreate or migrate it.
-
-
----
-
-## 📂 Scripts Included
-| Script Name | Description |
-|------------|-------------|
-| **gke-node-pool-clone.sh** | Clone an existing GKE node pool by parsing a console URL and generating a fresh creation script. |
 
 ---
 
@@ -58,7 +48,7 @@ then it will ask if you want to run the cmd. if you give yes it will run the nod
 bash create-<new-nodepool>.sh
 ```
 
-## Generated (Example) Output of script
+## Generated Output (Example) of script
 ```
 gcloud container node-pools create "new-nodepool" \
   --project "prod" \
