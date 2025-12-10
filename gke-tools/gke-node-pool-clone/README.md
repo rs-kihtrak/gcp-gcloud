@@ -46,20 +46,20 @@ Run the clone tool using a GKE Console nodepool URL:
 
 ```bash
 ./GKE_Node_Pool_Clone "https://console.cloud.google.com/kubernetes/nodepool/<region>/<cluster>/<nodepool>?project=<project>"
+``
 
-
-You will be prompted to enter a new nodepool name.  
+# You will be prompted to enter a new nodepool name.  
 A script will be generated:
 
 
 
-Run it:
+# Run it:
 
 ```bash
 bash create-<new-nodepool>.sh
+```
 
-
-Generated Output (Example)
+# Generated Output (Example)
 ```
 gcloud container node-pools create "new-pool" \
   --project "prod" \
@@ -76,4 +76,4 @@ gcloud container node-pools create "new-pool" \
   --enable-autorepair \
   --max-surge-upgrade "1" \
   --max-unavailable-upgrade "0"
-
+```
