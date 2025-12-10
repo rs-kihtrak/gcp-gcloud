@@ -20,7 +20,7 @@ A script that:
 - Fetches the full configuration using `gcloud`  
 - Extracts machine type, disk, taints, labels, autoscaling, pod ranges, upgrade settings, metadata  
 - Generates a ready-to-run **node pool recreation script**  
-- Supports macOS Bash 3.2 & Linux  
+- Supports macOS Bash & Linux  
 - Ideal for nodepool migration, upgrade, or rotation
 
 
