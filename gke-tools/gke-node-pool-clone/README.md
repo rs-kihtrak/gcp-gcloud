@@ -45,7 +45,7 @@ The tool, **gke-node-pool-clone.sh**, extracts configuration from an existing GK
 Run the clone tool using a GKE Console nodepool URL:
 
 ```bash
-./GKE_Node_Pool_Clone "https://console.cloud.google.com/kubernetes/nodepool/<region>/<cluster>/<nodepool>?project=<project>"
+./gke-node-pool-clone.sh "https://console.cloud.google.com/kubernetes/nodepool/<region>/<cluster>/<nodepool>?project=<project>"
 ```
 
 # You will be prompted to enter a new nodepool name.  
@@ -61,7 +61,7 @@ bash create-<new-nodepool>.sh
 
 # Generated Output (Example)
 ```
-gcloud container node-pools create "new-pool" \
+gcloud container node-pools create "new-nodepool" \
   --project "prod" \
   --cluster "prod-gke" \
   --location "asia-south1" \
