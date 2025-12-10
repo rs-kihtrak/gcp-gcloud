@@ -46,7 +46,7 @@ Run the clone tool using a GKE Console nodepool URL:
 
 ```bash
 ./GKE_Node_Pool_Clone "https://console.cloud.google.com/kubernetes/nodepool/<region>/<cluster>/<nodepool>?project=<project>"
-``
+```
 
 # You will be prompted to enter a new nodepool name.  
 A script will be generated:
