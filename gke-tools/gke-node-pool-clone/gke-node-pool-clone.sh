@@ -78,8 +78,8 @@ DISK_TYPE=$(jq -r '.config.diskType // .nodeConfig.diskType // empty' nodepool.j
 IMAGE_TYPE=$(jq -r '.config.imageType // .nodeConfig.imageType // empty' nodepool.json)
 
 # scopes & service account
-#SCOPES=$(jq -r '(.config.oauthScopes // .nodeConfig.oauthScopes // []) | join(",")' nodepool.json)
-SCOPES='https://www.googleapis.com/auth/cloud-platform'
+SCOPES=$(jq -r '(.config.oauthScopes // .nodeConfig.oauthScopes // []) | join(",")' nodepool.json)
+#SCOPES='https://www.googleapis.com/auth/cloud-platform'
 SERVICE_ACCOUNT=$(jq -r '.config.serviceAccount // .nodeConfig.serviceAccount // empty' nodepool.json)
 
 # taints (joined by comma)
