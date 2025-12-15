@@ -8,7 +8,7 @@ GKE, Compute Engine, Storage, IAM, Networking, and more.
 
 ### 🧩 gke-tools
 - [`gke-node-pool-clone`](gke-tools/gke-node-pool-clone/) – Clone or recreate a GKE Node Pool by parsing configuration from the GCP Console URL.
-
+- [`gke-node-pool-update`](gke-tools/gke-node-pool-update/) –   Update GKE Node Pool Spec by parsing configuration from the GCP Console URL.
 
 ---
 
@@ -23,4 +23,10 @@ A script that:
 - Supports macOS Bash & Linux  
 - Ideal for nodepool migration, upgrade, or rotation
 
+### ▶️ `gke-node-pool-update`
+- Parses a GKE Console node pool URL
+- Auto-parses project / region / cluster / nodepool
+- Shows before → after diff
+- Generates a ready-to-run **node pool Update Script***
+- Always generates reusable script
 
