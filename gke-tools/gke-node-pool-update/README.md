@@ -18,3 +18,9 @@ Update an existing GKE node pool Spec **safely** using only the **GKE Console UR
 
 ```bash
 ./gke-node-pool-update.sh "<GKE_NODEPOOL_CONSOLE_URL>"
+
+```
+
+```
+Example: ./gke-node-pool-update.sh  "https://console.cloud.google.com/kubernetes/nodepool/<region>/<cluster>/<nodepool>?project=<project>"
+```
