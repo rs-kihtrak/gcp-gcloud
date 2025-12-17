@@ -43,11 +43,12 @@ This script **detects, plans, and applies** everything correctly.
 ### Option 1️⃣  Pass values directly
 ```bash
 ./gke-workload-identity-bind.sh "PROJECT,NAMESPACE,KSA,GSA"
-
+```
 
 ### Option 2️⃣ — Interactive prompts
+```bash
 ./gke-workload-identity-bind.sh
-
+```
 
 ---
 ###./If KSA is omitted, it defaults to the GSA name.
