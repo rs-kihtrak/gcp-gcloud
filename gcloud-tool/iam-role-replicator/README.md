@@ -35,12 +35,6 @@ This tool simplifies IAM role management by allowing you to:
 **On Target Project:**
 - `roles/resourcemanager.projectIamAdmin` (to modify IAM policies)
 
-### Installation
-
-```bash
-# Clone the repository
-git clone https://github.com/rs-kihtrak/gcp-gcloud.git
-cd gcp-gcloud/iam-tools
 
 # Make the script executable
 chmod +x iam-role-replicator.sh
@@ -208,25 +202,6 @@ ERROR: (gcloud.projects.get-iam-policy) User does not have permission
 - [GKE Node Pool Manager](../gke-tools/) - Manage GKE node pools
 - [GCP Service Account Tools](../sa-tools/) - Service account utilities
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📄 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 👤 Author
-
-**Karthik SR**
-- GitHub: [@rs-kihtrak](https://github.com/rs-kihtrak)
-- LinkedIn: [rs-kihtrak](https://linkedin.com/in/rs-kihtrak)
 
 ## 🙏 Acknowledgments
 
