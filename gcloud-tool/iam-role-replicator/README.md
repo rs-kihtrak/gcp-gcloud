@@ -197,11 +197,6 @@ ERROR: (gcloud.projects.get-iam-policy) User does not have permission
 - `roles/viewer` on source project
 - `roles/resourcemanager.projectIamAdmin` on target project
 
-## 📚 Related Tools
-
-- [GKE Node Pool Manager](../gke-tools/) - Manage GKE node pools
-- [GCP Service Account Tools](../sa-tools/) - Service account utilities
-
 
 ## 🙏 Acknowledgments
 
@@ -210,4 +205,3 @@ ERROR: (gcloud.projects.get-iam-policy) User does not have permission
 
 ---
 
-**⚡ Pro Tip**: Combine with `gcloud` command history to track all IAM changes for compliance reporting!
