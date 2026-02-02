@@ -1,0 +1,8 @@
+# IAM Roles to be applied
+# One role per line
+# Lines starting with # are ignored
+
+roles/compute.viewer
+roles/monitoring.metricWriter
+roles/logging.logWriter
+roles/storage.objectViewer

@@ -1,0 +1,7 @@
+# GCP Project IDs
+# One project per line
+# Lines starting with # are ignored
+
+project-dev-123456
+project-staging-789012
+project-prod-345678
