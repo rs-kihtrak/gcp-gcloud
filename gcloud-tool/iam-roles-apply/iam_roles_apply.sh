@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Script to apply IAM roles to multiple GCP projects
-# Usage: ./apply_iam_roles.sh <member>
-# Example: ./apply_iam_roles.sh serviceAccount:prometheus-sa@monitoring-project.iam.gserviceaccount.com
-# Example: ./apply_iam_roles.sh user:john.doe@example.com
-# Example: ./apply_iam_roles.sh group:devops-team@example.com
+# Usage: ./iam_roles_apply.sh <member>
+# Example: ./iam_roles_apply.sh serviceAccount:prometheus-sa@monitoring-project.iam.gserviceaccount.com
+# Example: ./iam_roles_apply.sh user:john.doe@example.com
+# Example: ./iam_roles_apply.sh group:devops-team@example.com
 
 set -e
 

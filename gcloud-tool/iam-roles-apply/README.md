@@ -4,7 +4,7 @@ This script automates the process of applying IAM roles to multiple GCP projects
 
 ## Files
 
-1. **apply_iam_roles.sh** - Main automation script
+1. **iam_roles_apply.sh** - Main automation script
 2. **roles.txt** - File containing list of roles to apply (must be in same directory)
 3. **projects.txt** - File containing list of project IDs (must be in same directory)
 
@@ -17,13 +17,13 @@ This script automates the process of applying IAM roles to multiple GCP projects
 ## Setup
 
 1. Place all files in the same directory:
-   - `apply_iam_roles.sh`
+   - `iam_roles_apply.sh`
    - `roles.txt`
    - `projects.txt`
 
 2. Make the script executable:
 ```bash
-chmod +x apply_iam_roles.sh
+chmod +x iam_roles_apply.sh
 ```
 
 3. Authenticate with gcloud:
@@ -64,23 +64,23 @@ The script automatically uses `roles.txt` and `projects.txt` from the same direc
 
 ### For Service Account:
 ```bash
-./apply_iam_roles.sh serviceAccount:prometheus-sa@monitoring-project.iam.gserviceaccount.com
+./iam_roles_apply.sh serviceAccount:prometheus-sa@monitoring-project.iam.gserviceaccount.com
 ```
 
 ### For User:
 ```bash
-./apply_iam_roles.sh user:jane@example.com
+./iam_roles_apply.sh user:jane@example.com
 ```
 
 ### For Group:
 ```bash
-./apply_iam_roles.sh group:devops-team@example.com
+./iam_roles_apply.sh group:devops-team@example.com
 ```
 
 ## Command Syntax
 
 ```bash
-./apply_iam_roles.sh <member>
+./iam_roles_apply.sh <member>
 ```
 
 **Parameters:**
