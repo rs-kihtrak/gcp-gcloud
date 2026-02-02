@@ -90,7 +90,13 @@ echo -e "${YELLOW}======================================${NC}"
 echo ""
 
 # Read roles into array
-mapfile -t ROLES < <(grep -v '^#' "$ROLES_FILE" | grep -v '^[[:space:]]*$')
+ROLES=()
+while IFS= read -r line || [ -n "$line" ]; do
+    [[ "$line" =~ ^[[:space:]]*# ]] && continue
+    [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]] && continue
+    line=$(echo "$line" | xargs)
+    ROLES+=("$line")
+done < "$ROLES_FILE"
 echo -e "Found ${GREEN}${#ROLES[@]}${NC} roles to apply"
 
 # Read projects into array
