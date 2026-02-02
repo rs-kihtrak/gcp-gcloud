@@ -89,18 +89,30 @@ echo -e "Member: ${GREEN}$MEMBER${NC}"
 echo -e "${YELLOW}======================================${NC}"
 echo ""
 
-# Read roles into array
+# Read roles into array (POSIX-compatible way)
 ROLES=()
 while IFS= read -r line || [ -n "$line" ]; do
+    # Skip comments and empty lines
     [[ "$line" =~ ^[[:space:]]*# ]] && continue
     [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]] && continue
+    # Trim whitespace
     line=$(echo "$line" | xargs)
     ROLES+=("$line")
 done < "$ROLES_FILE"
+
 echo -e "Found ${GREEN}${#ROLES[@]}${NC} roles to apply"
 
-# Read projects into array
-mapfile -t PROJECTS < <(grep -v '^#' "$PROJECTS_FILE" | grep -v '^[[:space:]]*$')
+# Read projects into array (POSIX-compatible way)
+PROJECTS=()
+while IFS= read -r line || [ -n "$line" ]; do
+    # Skip comments and empty lines
+    [[ "$line" =~ ^[[:space:]]*# ]] && continue
+    [[ -z "$line" || "$line" =~ ^[[:space:]]*$ ]] && continue
+    # Trim whitespace
+    line=$(echo "$line" | xargs)
+    PROJECTS+=("$line")
+done < "$PROJECTS_FILE"
+
 echo -e "Found ${GREEN}${#PROJECTS[@]}${NC} projects"
 echo ""
 
